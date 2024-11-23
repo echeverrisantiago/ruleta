@@ -1,0 +1,211 @@
+/*
+Description:
+    Contains all the styles for the winning wheel page.
+    
+Verison History:
+    2012-01-28, Douglas McKechie
+    - Created based off earlier version.
+    
+    2015-09-26, Douglas McKechie
+    - Minor updates for the 2.0 winwheel example.
+*/
+
+html,body, div {
+    overscroll-behavior: none;
+}
+
+*,h1,h2,h3,h4,p,span {
+    font-family: 'Arial';
+}
+
+.logout {
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+body
+{
+    /* background: rgb(217, 230, 235); */
+    background: #000;
+}
+
+.confetti {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    transition: display 2s linear;
+    pointer-events: none;
+}
+
+#resultRoulette {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    margin-top: 50px;
+}
+
+.modal-roulette {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px; 
+}
+
+.amount-option {
+    font-size: .6rem;
+    border-radius: 3rem;
+    background:#dcb851;
+    border-color:#dcb851;    
+}
+
+.amount-option.btn-success.active, .amount-option:hover, .amount-option.btn-success.disabled {
+    background-color: rgb(255, 187, 0) !important;
+    border-color: rgb(255, 187, 0) !important;
+}
+
+.roulette-style {
+    position: absolute;
+    max-width: 95%;
+}
+
+.main_lost_result {
+    font-size: 50px;
+}
+
+.roulette-style img {
+    max-width: 95%;
+}
+
+.main_result_text {
+    font-size: 3vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.main_result_image {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.main_result_image img {
+    width: 90%;
+    max-width: 400px;
+}
+
+button.btn-primary.spin_button {
+    background-color: #dcb851;
+    margin-top: calc(80px + 1vh);
+    z-index: 9;
+}
+
+button.btn-primary.spin_button:active {
+    background-color: rgb(255, 187, 0) !important;
+}
+
+/* Sets the background image for the wheel */
+td.the_wheel
+{
+    background-image: url(./wheel_back.png);
+    background-position: center;
+    background-repeat: none;
+}
+
+#canvas {
+    margin-top: 24px;
+    width: 500px;
+    max-width: 85%;
+    margin-left: 0px;
+}
+
+/* Do some css reset on selected elements */
+h1, p
+{
+    margin: 0;
+}
+
+div.power_controls
+{
+    margin-right:70px;
+}
+
+div.html5_logo
+{
+    margin-left:70px;
+}
+
+/* Styles for the power selection controls */
+table.power
+{
+    background-color: #cccccc;
+    cursor: pointer;
+    border:1px solid #333333;
+}
+
+table.power th
+{
+    background-color: white;
+    cursor: default;
+}
+
+td.pw1
+{
+    background-color: #6fe8f0;
+}
+
+td.pw2
+{
+    background-color: #86ef6f;
+}
+
+td.pw3
+{
+    background-color: #ef6f6f;
+}
+
+/* Style applied to the spin button once a power has been selected */
+.clickable
+{
+    cursor: pointer;
+}
+
+/* Other misc styles */
+.margin_bottom
+{
+    margin-bottom: 5px;
+}
+
+.spin_button {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+    font-weight: bold;
+    border: 4px solid black !important;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: none;
+}
+
+@media screen and (max-width: 576px) {
+    .roulette-style img {
+        margin-top: 8px;
+    }
+    .mb-xs-1 {
+        margin-bottom: .25rem!important;
+    }
+}
+.menu-admin {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.menu-admin img {
+    cursor: pointer;
+    height: 4rem;
+    filter: grayscale(10%) brightness(90%) sepia(100%) hue-rotate(0deg) saturate(600%) contrast(0.8);
+}

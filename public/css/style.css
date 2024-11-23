@@ -1,0 +1,23 @@
+.w-90 {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.body-in {
+    margin-top: 4rem;    
+}
+
+@media screen and (max-width: 576px) {
+    .alertas,input[type="file"] {
+        font-size: 13px;
+    }
+}
+
+.modal-dialog {
+    max-width: 90%;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+}
